@@ -56,7 +56,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: ${{ fromJSON(needs.generate-matrix.outputs.matrix) }}
+        target: [m52xq]
 
     steps:
       - name: Checkout repo
