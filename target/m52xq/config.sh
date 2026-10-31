@@ -42,6 +42,14 @@ TARGET_LCD_CONFIG_HFR_SUPPORTED_REFRESH_RATE_NS="60"
 TARGET_LCD_CONFIG_SEAMLESS_BRT="149,84"
 TARGET_LCD_CONFIG_SEAMLESS_LUX="300,3500"
 # ]
+# S25 Ultra Spoofing Properties
+echo "ro.product.model=SM-S938B" >> "$SYSTEM_DIR/build.prop"
+echo "ro.product.brand=samsung" >> "$SYSTEM_DIR/build.prop"
+echo "ro.product.name=e3qxxx" >> "$SYSTEM_DIR/build.prop"
+echo "ro.product.device=e3q" >> "$SYSTEM_DIR/build.prop"
+echo "ro.product.manufacturer=samsung" >> "$SYSTEM_DIR/build.prop"
+echo "ro.build.product=e3q" >> "$SYSTEM_DIR/build.prop"
+
 TARGET_LCD_SUPPORT_MDNIE_HW=true
 TARGET_RIL_FEATURES="onebinary embms_qc"
 TARGET_RIL_SIM_CONFIG_MULTISIM_TRAYCOUNT="1"
